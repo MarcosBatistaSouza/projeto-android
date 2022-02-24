@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Inconsolata & display=swap');
+
+@font-face {
+    font-family: 'droid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+:root{    
+    --cor1: #024529;
+    --cor2: #5DDEA8;
+    --cor3: #06C475;
+    --cor4: #32453D;
+    --cor5: #048F55;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-droid: 'droid', monospace;
+    --fonte-destaque: 'Inconsolata', monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+}
+
+header{
+    background-image: linear-gradient(to top,var(--cor1) 50%,var(--cor3));
+    color: white;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    text-align: center;
+}
+
+header > h1{
+    margin: auto;
+    padding: 15px;
+    font-size: 2.5em;
+}
+
+header > h2{
+    padding: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    max-width: 600px;
+}
+
+nav{
+    background-color: #024529;
+    text-align: left;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+a.menu{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    align-self: center;
+}
+
+img#bugdroid{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+main{
+    background-color: white;
+    min-width:280px ;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+p{
+    text-align: justify;
+    padding: 5px;
+    text-indent: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+main > section > h1{
+    color: var(--cor4);
+    font-family: var(--fonte-droid);
+    padding: 10px 10px 10px 5px
+}
+main > section > h2{
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), white);
+    color: var(--cor4);
+    font-family: var(--fonte-droid);
+    padding-left: 15px;
+    margin: 8px;
+}
+
+strong, a{
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+div{
+    background-color: var(--cor5);
+    padding: 20px;
+    text-align: center;
+}
+
+aside > h3{
+    background-color: var(--cor1);
+}
+
+aside{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+h3{
+    border-radius: 5px;
+    padding: 5px ;
+}
+
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+iframe{
+    border-radius: 10px;
+}
